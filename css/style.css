@@ -217,6 +217,103 @@ a.navbar-brand {
     background: var(--primary-color);
 }
 
+/* 3. About me */
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #444;
+    text-transform: uppercase;
+}
+
+.section-title span {
+    background: var(--primary-color);
+    margin-left: 10px;
+    height: 5px;
+    width: 30px;
+    display: inline-block;
+}
+
+.section-subtitle {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+section#about-me .image-wrapper {
+    padding: 0 0 0 30px;
+    position: relative;
+    margin-bottom: 30px !important;
+}
+
+section#about-me .image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+section#about-me .image-wrapper::after {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    left: 0;
+    bottom: -30px;
+    background-image: url("../assets/dots.png");
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+section#about-me .description {
+    margin: 40px 0;
+}
+
+section#about-me .description p {
+    letter-spacing: 1px;
+    color: #707070;
+}
+
+section#about-me .skill-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#about-me .skill-title p {
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: #5c5c5c;
+}
+
+section#about-me .skill-progress span {
+    background: #a8eb12;
+    display: block;
+    height: 5px;
+    width: 0;
+    transition: width 1s;
+}
+
+section#about-me .skill-item {
+    margin-bottom: 15px;
+}
+
+section#about-me .skills-bars {
+    margin-bottom: 40px;
+}
+
+a.btn-main {
+    text-decoration: none;
+    background: #5c5c5c;
+    padding: 15px 25px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
 /* Responsive */
 @media (max-width: 991.98px) and (min-width: 320px) {
     .navbar-light {
