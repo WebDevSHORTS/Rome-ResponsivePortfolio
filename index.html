@@ -1,185 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Rome - Portfolio</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rome - Portfolio</title>
+        <!-- Bootstrap 4.1 -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
+        <!-- FontAwesome -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+            integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+            crossorigin="anonymous"
+        />
+        <!-- Hamburger CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
+        />
+        <!-- CSS Style -->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
 
-    <!-- Bootstrap 4.1 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <!-- CSS Style -->
-    <link rel="stylesheet" href="./css/style.css">
+    <body>
+        <!-- 1. Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">Rome</a>
+                <!-- Menu button -->
+                <button
+                    class="hamburger hamburger--slider"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navtoggler"
+                    aria-controls="navtoggler"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
 
-</head>
-
-<body>
-
-    <!-- 1. Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-        <div class="container">
-            <!-- Logo -->
-            <a href="index.html" class="navbar-brand">Rome</a>
-            <!-- Menu button -->
-            <button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#navtoggler'
-                aria-controls='navtoggler' aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Menu Links -->
-            <div class="collapse navbar-collapse" id="navtoggler">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link active">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#service" class="nav-link">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#blog" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-
-                <!-- Social Media -->
-                <ul class="social-media-nav">
-                    <li class="social-item">
-                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- 1. Navbar: END -->
-
-    <!-- 2. Home -->
-    <section class="home" id="home">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="header d-flex align-items-center">
-                <div class="header-info">
-                    <!-- Title -->
-                    <h1><span>Hi there folks!</span> <br> <span>I'm</span> John Doe <br>
-                        <span>Based in Rome</span></h1>
-
-                    <!-- Meta -->
-                    <ul class="header-meta">
-                        <li>Web Developer</li>
-                        <li>DB Architect</li>
-                        <li>Photographer</li>
+                <!-- Menu Links -->
+                <div class="collapse navbar-collapse" id="navtoggler">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active"
+                                >Home <span class="sr-only">(current)</span></a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#service" class="nav-link">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#blog" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
                     </ul>
 
-                    <!-- Jump to About section -->
-                    <a href="#about" class="down-arrow">
-                        <span class="down-one"></span>
-                        <span class="down-two">About me</span>
-                        <span class="down-three"></span>
-                    </a>
+                    <!-- Social Media -->
+                    <ul class="social-media-nav">
+                        <li class="social-item">
+                            <a href="#" class="facebook"
+                                ><i class="fab fa-facebook-f"></i
+                            ></a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="instagram"
+                                ><i class="fab fa-instagram"></i
+                            ></a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="twitter"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- 2. Home: END -->
+        </nav>
+        <!-- 1. Navbar: END -->
 
-    <!-- 3. About me -->
-    <section class="about-me section-padding" id="about-me">
-        <div class="container">
-            <div class="row">
-                <!-- About me Image -->
-                <div class="col-lg-5 col-md-4">
-                    <div class="image-wrapper">
-                        <img src="./assets/about-me.jpg" alt="About me photo">
+        <!-- 2. Home -->
+        <section class="home" id="home">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="header d-flex align-items-center">
+                    <div class="header-info">
+                        <!-- Title -->
+                        <h1>
+                            <span>Hi there folks!</span> <br />
+                            <span>I'm</span> John Doe <br />
+                            <span>Based in Rome</span>
+                        </h1>
+
+                        <!-- Meta -->
+                        <ul class="header-meta">
+                            <li>Web Developer</li>
+                            <li>DB Architect</li>
+                            <li>Photographer</li>
+                        </ul>
+
+                        <!-- Jump to About section -->
+                        <a href="#about" class="down-arrow">
+                            <span class="down-one"></span>
+                            <span class="down-two">About me</span>
+                            <span class="down-three"></span>
+                        </a>
                     </div>
                 </div>
-                <!-- About me content -->
-                <div class="col-lg-7 col-md-8">
-                    <div class="about-wrapper">
-                        <h3 class="section-title">About me<span></span></h3>
-                        <span class="section-subtitle">UI Designer & Web Developer</span>
-                        <div class="description">
-                            <p>I am a professional web designer from Rome, Italy. <br> I create beautiful
-                                professional websites using best practice accessibility. <br> I enjoy turning complex
-                                problems into simple, beautiful and intuitive interface designs.</p>
+            </div>
+        </section>
+        <!-- 2. Home: END -->
+
+        <!-- 3. About me -->
+        <section class="about-me section-padding" id="about-me">
+            <div class="container">
+                <div class="row">
+                    <!-- About me img -->
+                    <div class="col-lg-5 col-md-4">
+                        <div class="image-wrapper">
+                            <img
+                                src="./assets/about-me.jpg"
+                                alt="About me photo"
+                            />
                         </div>
-                        <!-- Skill Bars -->
+                    </div>
+
+                    <!-- About me content -->
+                    <div class="col-lg-7 col-md-8">
+                        <div class="about-wrapper">
+                            <h3 class="section-title">
+                                About me <span></span>
+                            </h3>
+                            <span class="section-subtitle"
+                                >UI Designer & Web Developer</span
+                            >
+                            <div class="description">
+                                <p>
+                                    I am a professional web designer from Rome,
+                                    Italy. <br />
+                                    I create beautiful professional websites
+                                    using best practice accessibility. <br />
+                                    I enjoy turning complex problems into
+                                    simple, beautiful and intuitive interface
+                                    designs.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Skills bars -->
                         <div class="skills-bars">
-                            <!-- Skill Item -->
                             <div class="skill-item">
-                                <div class="skill-title">
+                                <div class="skill-title" style="width: 98%;">
                                     <p>HTML5, CSS3</p>
                                     <p>98%</p>
                                 </div>
                                 <div class="skill-progress">
-                                    <span data-value='98%'></span>
+                                    <span data-value="98%"></span>
                                 </div>
                             </div>
-                            <!-- Skill Item: End -->
-                            <!-- Skill Item -->
                             <div class="skill-item">
-                                <div class="skill-title">
+                                <div class="skill-title" style="width: 80%;">
                                     <p>Web Design</p>
                                     <p>80%</p>
                                 </div>
                                 <div class="skill-progress">
-                                    <span data-value='80%'></span>
+                                    <span data-value="80%"></span>
                                 </div>
                             </div>
-                            <!-- Skill Item: End -->
-                            <!-- Skill Item -->
                             <div class="skill-item">
-                                <div class="skill-title">
+                                <div class="skill-title" style="width: 90%;">
                                     <p>SQL, PL/SQL, MongoDB</p>
                                     <p>90%</p>
                                 </div>
                                 <div class="skill-progress">
-                                    <span data-value='90%'></span>
+                                    <span data-value="90%"></span>
                                 </div>
                             </div>
-                            <!-- Skill Item: End -->
                         </div>
-                        <!-- Skill Bars: End -->
 
                         <!-- Buttons -->
                         <div class="about-buttons">
-                            <a href="javascript:;" class="btn-main">Download CV</a>
+                            <a href="javascript:;" class="btn-main"
+                                >Download CV</a
+                            >
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- 3. About me: END -->
+        </section>
+        <!-- 3. About me: End -->
 
-
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!-- Bootstrap 4.1 JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
-    <!-- Waypoints -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <!-- Custom js -->
-    <script src="./js/index.js"></script>
-</body>
-
+        <!-- Jquery -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap 4.1 JS -->
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Waypoints -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <!-- Custom -->
+        <script src="./js/index.js"></script>
+    </body>
 </html>

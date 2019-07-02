@@ -77,6 +77,25 @@ a.navbar-brand {
     font-size: 17px;
 }
 
+.fixed {
+    background: #fff;
+    box-shadow: 0 0 13px #ddd;
+}
+
+.fixed a.navbar-brand,
+.fixed li.nav-item a.nav-link,
+.fixed .social-media-nav li.social-item a {
+    color: #444 !important;
+}
+
+.navbar button:focus {
+    outline: none !important;
+}
+
+.hamburger {
+    display: none;
+}
+
 /* 2. Home */
 .home {
     height: 100vh;
@@ -344,6 +363,10 @@ a.btn-main {
 
     .navbar-light .social-media-nav li i {
         color: #444;
+    }
+
+    .hamburger {
+        display: inline-block;
     }
 }
 
