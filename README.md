@@ -14,7 +14,7 @@ Watch the tutorials series on my [YouTube channel](https://www.youtube.com/watch
 ##### For every tutorial I created a branch:
 - 1.HomeSection ([YT link](https://www.youtube.com/watch?v=o6094NnwVFU)): First section of our landing page, the HOME section.
 - 2.AboutMeSection ([YT link](https://www.youtube.com/watch?v=Kq0bryP-zAo)): Here we are gonna create an ABOUT ME section with some skills progress bars.
-- 3.CustomizedNavbar ([]()): Bootstrap's hamburger menu is boring. Let's change that using hamburger.css from our friend [jonush](https://github.com/jonsuh/hamburgers).
+- 3.CustomizedNavbar ([YT link](https://youtu.be/qz8aY3xZm_8)): Bootstrap's hamburger menu is boring. Let's change that using hamburger.css from our friend [jonush](https://github.com/jonsuh/hamburgers).
 
 
 
